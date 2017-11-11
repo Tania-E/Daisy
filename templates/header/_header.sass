@@ -22,28 +22,14 @@
 
 	&-content
 		padding-top: 11.9%
-
-		&:before, &:after
-			content: ""
-			position: absolute
-			width: 100px
-			height: 7px
-			background-color: #ffffff
-			opacity: 0.5
-			top: 20px
-			
-		&:before
-			left: 0
-
-		&:after
-			right: 0
+		text-align: center
 
 	&-text
 		color: #ffffff
 		font-size: 24px
 		font-weight: 300
 		text-align: center
-		padding-top: 25px
+		padding: 25px 0 10%
 
 .daisy
 	display: flex
@@ -53,7 +39,7 @@
 	&-text
 		margin-left: 15px
 		color: #ffffff
-		// font-family: Gotham
+		font-family: Gotham
 		font-size: 24px
 		font-weight: 700
 		line-height: 15.65px
@@ -89,3 +75,20 @@
 	font-size: 36px
 	font-weight: 700
 	text-align: center
+
+
+.bars
+	&:before, &:after
+		content: ""
+		position: absolute
+		width: 100px
+		height: 7px
+		background-color: #ffffff
+		opacity: 0.5
+		top: 20px
+		
+	&:before
+		left: 0
+
+	&:after
+		right: 0
