@@ -1,0 +1,146 @@
+.process
+	&-text
+		text-align: center
+		padding: 30px 17% 0
+		color: #adadad
+		font-size: 20px
+		font-weight: 300
+		padding-bottom: 60px
+
+	&-align
+		text-align: center
+
+.position
+	position: relative
+
+.hex2
+	left: 243px
+	top: 48px
+
+.hex3
+	left: 319px
+	top: -84px
+
+.hex4
+	left: 473px
+	top: -29px
+
+.hex-small
+	position: absolute
+	width: 150px
+	height: 86.60px
+	background-color: #ffffff
+	margin: 43.30px 0
+	border-left: solid 5px #fc635e
+	border-right: solid 5px #fc635e
+	&:before, &:after
+		content: ""
+		position: absolute
+		z-index: 1
+		width: 106.07px
+		height: 106.07px
+		-webkit-transform: scaleY(0.5774) rotate(-45deg)
+		-ms-transform: scaleY(0.5774) rotate(-45deg)
+		transform: scaleY(0.5774) rotate(-45deg)
+		background-color: inherit
+		left: 19px
+	&:before
+		top: -58px
+		border-top: solid 7.0711px #fc635e
+		border-right: solid 7.0711px #fc635e
+	&:after
+		bottom: -58px
+		border-bottom: solid 7.0711px #fc635e
+		border-left: solid 7.0711px #fc635e
+
+
+
+.hex-big
+	position: absolute
+	width: 260px
+	height: 150.11px
+	background-color: #ffffff
+	margin: 75.06px 0
+	border-left: solid 5px #fc635e
+	border-right: solid 5px #fc635e
+	&:before, &:after
+		content: ""
+		position: absolute
+		z-index: 1
+		width: 183.85px
+		height: 183.85px
+		-webkit-transform: scaleY(0.5774) rotate(-45deg)
+		-ms-transform: scaleY(0.5774) rotate(-45deg)
+		transform: scaleY(0.5774) rotate(-45deg)
+		background-color: inherit
+		left: 34px
+	&:before
+		top: -96px
+		border-top: solid 7.0711px #fc635e
+		border-right: solid 7.0711px #fc635e
+	&:after
+		bottom: -96px
+		border-bottom: solid 7.0711px #fc635e
+		border-left: solid 7.0711px #fc635e
+
+
+
+
+
+.hex-pic
+	position: absolute
+	width: 260px
+	height: 150.11px
+	margin: 75.06px 0
+	background-image: url(http://csshexagon.com/img/meow.jpg)
+	background-size: auto 300.2221px
+	background-position: center
+	left: 27px
+	top: 127px
+
+.hexTop, .hexBottom
+	position: absolute
+	z-index: 1
+	width: 183.85px
+	height: 183.85px
+	overflow: hidden
+	-webkit-transform: scaleY(0.5774) rotate(-45deg)
+	-ms-transform: scaleY(0.5774) rotate(-45deg)
+	transform: scaleY(0.5774) rotate(-45deg)
+	background: inherit
+	left: 38.08px
+
+// /*counter transform the bg image on the caps
+
+.hexTop:after, .hexBottom:after
+	content: ""
+	position: absolute
+	width: 260.0000px
+	height: 150.1110699893027px
+	-webkit-transform: rotate(45deg) scaleY(1.7321) translateY(-75.0555px)
+	-ms-transform: rotate(45deg) scaleY(1.7321) translateY(-75.0555px)
+	transform: rotate(45deg) scaleY(1.7321) translateY(-75.0555px)
+	-webkit-transform-origin: 0 0
+	-ms-transform-origin: 0 0
+	transform-origin: 0 0
+	background: inherit
+
+.hexTop
+	top: -91.9239px
+	&:after
+		background-position: center top
+
+.hexBottom
+	bottom: -91.9239px
+	&:after
+		background-position: center bottom
+
+.hexagon:after
+	content: ""
+	position: absolute
+	top: 0.0000px
+	left: 0
+	width: 260.0000px
+	height: 150.1111px
+	z-index: 2
+	background: inherit
