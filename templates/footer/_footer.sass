@@ -1,0 +1,110 @@
+.footer
+	text-align: center
+	&-bg
+		background-image: url(../pic/footer.png)
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&-hexagon-small
+		display: inline-block
+		position: relative
+		width: 60px
+		height: 34.64px
+		background-color: #fc635e
+		margin: 17.32px 0
+		border-left: solid 4px #fe8682
+		border-right: solid 4px #fe8682
+		&:before, &:after
+			content: ""
+			position: absolute
+			z-index: 1
+			width: 42.43px
+			height: 42.43px
+			-webkit-transform: scaleY(0.5774) rotate(-45deg)
+			-ms-transform: scaleY(0.5774) rotate(-45deg)
+			transform: scaleY(0.5774) rotate(-45deg)
+			background-color: inherit
+			left: 6px
+		&:before
+			top: -24px
+			border-top: solid 5px #fe8682
+			border-right: solid 5px #fe8682
+		&:after
+			bottom: -24px
+			border-bottom: solid 5px #fe8682
+			border-left: solid 5px #fe8682
+
+	&-content
+		display: flex
+		justify-content: space-around
+		&-flex
+			// flex-grow: 1
+
+	&-p
+		color: #767676
+		font-size: 15px
+		font-weight: 300
+
+	&-name
+		color: #868686
+		font-size: 28px
+		font-weight: 500
+			
+		&-span
+			color: #fc635e
+
+	&-profession
+		font-size: 20px
+		font-weight: 300
+		color: #868686
+
+	&-hexagon-big
+		display: inline-block
+		position: relative
+		width: 212px
+		height: 122.40px
+		background-color: #fc635e
+		margin: 61.20px 0
+		border-left: solid 5px #fe8682
+		border-right: solid 5px #fe8682
+		&:before, &:after
+			content: ""
+			position: absolute
+			z-index: -1
+			width: 149.91px
+			height: 149.91px
+			-webkit-transform: scaleY(0.5774) rotate(-45deg)
+			-ms-transform: scaleY(0.5774) rotate(-45deg)
+			transform: scaleY(0.5774) rotate(-45deg)
+			background-color: inherit
+			left: 28px
+		&:before
+			top: -79px
+			border-top: solid 7.0711px #fe8682
+			border-right: solid 7.0711px #fe8682
+		&:after
+			bottom: -79px
+			border-bottom: solid 7.0711px #fe8682
+			border-left: solid 7.0711px #fe8682
+
+		&-title
+			color: #ffffff
+			font-size: 27px
+			font-weight: 500
+			line-height: 55px
+
+		&-p
+			color: #ffffff
+			font-size: 15px
+			font-weight: 300
+			line-height: 21px
+
+	&-text
+		margin-left: 15px
+		color: #ffffff
+		font-family: Gotham
+		font-size: 24px
+		font-weight: 700
+		line-height: 15.65px
+		padding: 60px 0
