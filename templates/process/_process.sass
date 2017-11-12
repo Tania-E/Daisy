@@ -12,18 +12,43 @@
 
 .position
 	position: relative
+	margin: 50px 0 485px
 
-.hex2
+div .hex1
+	border-left: solid 1px #adadad
+
+	&:after
+		border-bottom: solid 1px #adadad
+		border-left: solid 1px #adadad
+
+div .hexpic
+	position: absolute
+	left: 27px
+	top: 127px
+
+div .hex3
 	left: 243px
 	top: 48px
+	border-right: solid 1px #adadad
+	&:after
+		border-bottom: solid 1px #adadad
+		border-left: solid 1px #adadad
+	&:before
+		border-right: solid 1px #adadad
 
-.hex3
+div .hex4
 	left: 319px
 	top: -84px
-
-.hex4
+	&:after
+		border-bottom: solid 1px #adadad
+		border-left: solid 1px #adadad
+div .hex5
 	left: 473px
 	top: -29px
+	border-left: solid 1px #adadad
+	&:after
+		border-bottom: solid 1px #adadad
+		border-left: solid 1px #adadad
 
 .hex-small
 	position: absolute
@@ -49,7 +74,7 @@
 		border-top: solid 7.0711px #fc635e
 		border-right: solid 7.0711px #fc635e
 	&:after
-		bottom: -58px
+		bottom: -56px
 		border-bottom: solid 7.0711px #fc635e
 		border-left: solid 7.0711px #fc635e
 
@@ -57,7 +82,7 @@
 
 .hex-big
 	position: absolute
-	width: 260px
+	width: 264px
 	height: 150.11px
 	background-color: #ffffff
 	margin: 75.06px 0
@@ -73,13 +98,13 @@
 		-ms-transform: scaleY(0.5774) rotate(-45deg)
 		transform: scaleY(0.5774) rotate(-45deg)
 		background-color: inherit
-		left: 34px
+		left: 39px
 	&:before
-		top: -96px
+		top: -93px
 		border-top: solid 7.0711px #fc635e
 		border-right: solid 7.0711px #fc635e
 	&:after
-		bottom: -96px
+		bottom: -93px
 		border-bottom: solid 7.0711px #fc635e
 		border-left: solid 7.0711px #fc635e
 
@@ -92,7 +117,7 @@
 	width: 260px
 	height: 150.11px
 	margin: 75.06px 0
-	background-image: url(http://csshexagon.com/img/meow.jpg)
+	background-image: url(../pic/process.png)
 	background-size: auto 300.2221px
 	background-position: center
 	left: 27px
@@ -135,12 +160,12 @@
 	&:after
 		background-position: center bottom
 
-.hexagon:after
+.hex-pic:after
 	content: ""
 	position: absolute
 	top: 0.0000px
 	left: 0
 	width: 260.0000px
 	height: 150.1111px
-	z-index: 2
+	z-index: 1
 	background: inherit
