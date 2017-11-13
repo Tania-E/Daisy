@@ -18,17 +18,26 @@
 		border: 1px solid #adadad;
 
 	&-photo
-		display: flex
-		justify-content: space-between
-
-
+		// display: flex
+		// justify-content: center
+		font-size: 0
 
 		&-img
 			padding-bottom: 11px
-			object-fit: contain
-			// width: 100%
+			// object-fit: contain
+			width: 100%
 			// height: auto
+			padding: 3px
+			box-sizing: border-box
+		&-img2
+			width: 50%
+			padding: 3px
+			box-sizing: border-box
 
+
+	&-photo1
+		display: flex
+		justify-content: space-between
 .photo-all
 	font-size: 0
 
@@ -46,7 +55,7 @@
 
 
 
-@media screen and (max-width: 814px)
+@media screen and (max-width: 749px)
 	.portfolio
 		&-menu
 			display: block
@@ -55,3 +64,8 @@
 				padding: 5px 0
 		&-invisible
 			display: none
+		&-photo1
+			display: block
+	.photo-cont
+		display: block
+		width: 100%
