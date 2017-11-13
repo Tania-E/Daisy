@@ -9,6 +9,7 @@
 		display: flex
 		text-align: left
 		padding: 65px 0 90px
+		align-items: center
 		&-left
 			text-align: right
 
@@ -46,3 +47,16 @@
 			background-color: #fc635e
 			right: 0px
 			top: -6px
+
+.picture
+	object-fit: contain
+	width: 100%
+
+@media screen and (max-width: 728px)
+	.wedo
+		&-content
+			display: block
+			text-align: center
+			padding: 30px 0 30px
+	.picture
+		margin: 40px 0
