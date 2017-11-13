@@ -7,6 +7,10 @@
 		align-items: center
 
 	&-hexagon-small
+		
+		background-image: url(../pic/quotes.png)
+		background-position: 50% 50%
+		background-repeat: no-repeat
 		display: inline-block
 		position: relative
 		width: 60px
@@ -18,7 +22,7 @@
 		&:before, &:after
 			content: ""
 			position: absolute
-			z-index: 1
+			z-index: -1
 			width: 42.43px
 			height: 42.43px
 			-webkit-transform: scaleY(0.5774) rotate(-45deg)
@@ -38,18 +42,24 @@
 	&-content
 		display: flex
 		justify-content: space-around
+		align-items: center
+		margin: 70px 0 50px
+
 		&-flex
-			// flex-grow: 1
+			width: 33%
 
 	&-p
 		color: #767676
 		font-size: 15px
 		font-weight: 300
+		line-height: 21px
 
 	&-name
 		color: #868686
 		font-size: 28px
 		font-weight: 500
+		text-align: left
+		padding-bottom: 13px
 			
 		&-span
 			color: #fc635e
@@ -58,16 +68,21 @@
 		font-size: 20px
 		font-weight: 300
 		color: #868686
+		text-align: left
 
 	&-hexagon-big
 		display: inline-block
-		position: relative
+		position: absolute
 		width: 212px
 		height: 122.40px
 		background-color: #fc635e
 		margin: 61.20px 0
 		border-left: solid 5px #fe8682
 		border-right: solid 5px #fe8682
+		bottom: -118px
+		z-index: 8
+		transform: translate(-50%,0)
+
 		&:before, &:after
 			content: ""
 			position: absolute
@@ -108,3 +123,11 @@
 		font-weight: 700
 		line-height: 15.65px
 		padding: 60px 0
+
+.ljhfksjdfkdj
+	width: 163px
+	height: auto
+
+
+.arrpad
+	padding: 0 10px 151px

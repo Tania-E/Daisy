@@ -9,7 +9,7 @@
 	&:before, &:after
 		content: ""
 		position: absolute
-		z-index: 1
+		z-index: -1
 		width: 73px
 		height: 73px
 		-webkit-transform: scaleY(0.5774) rotate(-45deg)
@@ -25,6 +25,33 @@
 		bottom: -40px
 		border-bottom: solid 7.0711px #fe8682
 		border-left: solid 7.0711px #fe8682
+	&:hover
+		background-color: #ffffff
+
+	&-hex1
+		background-image: url("../pic/s2-1w.svg")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../pic/s2-1r.svg")		
+	&-hex2
+		background-image: url("../pic/s2-2w.svg")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../pic/s2-2r.svg")		
+	&-hex3
+		background-image: url("../pic/s2-3w.svg")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../pic/s2-3r.svg")		
+	&-hex4
+		background-image: url("../pic/s2-4w.svg")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../pic/s2-4r.svg")		
 
 .s2-text
 	text-align: center
@@ -33,6 +60,7 @@
 	font-size: 20px
 	font-weight: 300
 	padding-bottom: 60px
+	line-height: 26px
 
 .advantages
 	display: flex
@@ -60,7 +88,7 @@
 		font-size: 15px
 		font-weight: 300
 		line-height: 18px
-		padding: 3px 3px 40px
+		padding: 3px 10px 80px
 		box-sizing: border-box
 
 	&-icon
