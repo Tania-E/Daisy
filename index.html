@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"
+		name="viewport" 
+		content="width=device-width, 
+			initial-scale=1.0, 
+			maximum-scale=1.0, 
+			user-scalable=no"
+	>
 	<title>Daisy</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,17 +19,24 @@
 				<div class="hexagon"><div class="logo">D</div></div>
 				<div class="daisy-text">Daisy</div>
 			</div>
-			<nav class="header-nav">
-				<a href="" class="header-nav-a">about</a>
-				<a href="" class="header-nav-a">portfolio</a>
-				<a href="" class="header-nav-a">services</a>
-				<a href="" class="header-nav-a">contact</a>
-			</nav>
+
+			<label class="menu-toggle" for="inp"></label>
+			<input type="checkbox" id="inp"/>
+			<div class="header-padding">
+				<div class="navigation">
+					<nav class="menu">
+						<a href="#" class="menu-item">about</a>
+						<a href="#" class="menu-item">portfolio</a>
+						<a href="#" class="menu-item">services</a>
+						<a href="#" class="menu-item">contact</a>
+					</nav>		
+				</div>
+			</div>
 		</header>
 
 		<div class="header-content">
 			<div class="bars caption2">
-				<h2><span class="caption2-span">Clients</span> in your business</h2>
+				<h2 class="caption2"><span class="caption2-span">Clients</span> in your business</h2>
 				
 			</div>
 			<p class="header-text">Your clients on the internet. Learn how to receive them.</p>
@@ -237,7 +250,7 @@
 
 		<div class="footer-content">
 			<p class="footer-p footer-content-flex">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollici tudin, lorem quis bibendum auctor, nisi elit conse</p>
-			<img src="pic/alan.png" alt="" class="footer-content-flex ljhfksjdfkdj">
+			<img src="pic/alan.png" alt="" class="footer-content-flex fwhidth">
 			<div class="footer-content-flex">
 				<h4 class="footer-name"><span class="footer-name-span">Alan</span> Richman</h4>
 				<p class="footer-profession">CEO of Romashka</p>
@@ -259,7 +272,7 @@
 </section>
 <section class="footer-bg">
 	<img src="pic/daisy-logo.png" alt="">
-	<div class="footer-text">Daisy</div>
+	<a href="#"  class="footer-text">Daisy</a>
 </section>
 </body>
 </html>

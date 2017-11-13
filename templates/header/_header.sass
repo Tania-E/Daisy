@@ -6,24 +6,9 @@
 	display: flex
 	justify-content: space-between
 	align-items: center
-
-	&-nav
-		text-transform: uppercase
-
-		&-a
-			text-decoration: none
-			color: #ffffff
-			margin-left: 50px
-			padding-bottom: 6px
-
-			&:hover
-				color: #fc635e
-				border-bottom: 4px solid #fc635e
-
 	&-content
 		padding-top: 26vh
 		text-align: center
-
 	&-text
 		color: #ffffff
 		font-size: 24px
@@ -35,7 +20,6 @@
 	display: flex
 	justify-content: space-between
 	align-items: center
-
 	&-text
 		margin-left: 15px
 		color: #ffffff
@@ -51,18 +35,15 @@
 	height: 36px
 	background-color: #e65e5a
 	margin: 19.63px 0
-
 	&:before, &:after
 		content: ""
 		position: absolute
 		width: 0
 		border-left: 34px solid transparent
 		border-right: 34px solid transparent
-
 	&:before
 		bottom: 100%
 		border-bottom: 19.63px solid #e65e5a
-
 	&:after
 		top: 100%
 		width: 0
@@ -76,7 +57,6 @@
 	font-weight: 700
 	text-align: center
 
-
 .bars
 	&:before, &:after
 		content: ""
@@ -85,11 +65,9 @@
 		height: 7px
 		background-color: #ffffff
 		opacity: 0.5
-		top: 20px
-		
+		top: 20px		
 	&:before
 		left: 0
-
 	&:after
 		right: 0
 
@@ -100,3 +78,95 @@
 		position: absolute
 		top: 25%
 		left: 105%
+
+
+
+.menu 
+	// font-size: 0
+	// vertical-align: middle
+	display: flex
+
+	&-item 
+		display: inline-block
+		// box-sizing: border-box
+		// text-align: center
+		text-transform: uppercase
+		font-size: 16px
+		// white-space: nowrap
+		text-decoration: none
+		color: #ffffff
+		margin-left: 50px
+		padding-bottom: 6px
+
+		&:hover
+			color: #fc635e
+			border-bottom: 4px solid #fc635e
+
+
+.header-padding 
+	display: flex
+	justify-content: space-between
+
+.navigation 
+	display: flex
+	align-items: center
+
+.menu-toggle 
+	padding: 10px 17px
+	display: none
+	background: transparent
+	user-select: none
+	position: absolute
+	right: 10px
+	top: 59px
+	cursor: pointer
+	color: white
+	font-size: 27px
+	&::before  
+		content: "≡"
+		font: 2em "ChunkFive"
+
+#inp 
+	display: none
+
+#inp:checked + .header-padding .menu
+	display: block
+
+#inp:checked + .header-padding .menu-item 
+	display: block
+
+#inp:checked + .header-padding .menu-toggle 
+	display: block
+
+@media screen and (max-width: 937px)
+	.bars
+		&:before, &:after
+			position: relative
+
+@media screen and (max-width: 525px)
+	.menu
+		display: none
+	.menu-toggle
+		display: inline-block
+	.menu-item
+		display: block
+		text-align: left
+		padding: 5px 5px 5px 16px
+		width: 100%
+		cursor: pointer
+		margin-left: 0px
+		line-height: 33px
+		text-align: center
+	.navigation
+		top: 130px
+		width: 100%
+		position: absolute
+		right: 0px
+
+	.caption2
+		font-size: 26px
+	.header-text
+		font-size: 16px
+	.btn
+		font-size: 18px
+		padding: 14px 25px
